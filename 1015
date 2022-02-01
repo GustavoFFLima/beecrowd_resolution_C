@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float X1, X2, Y1, Y2;
+    double valor;
+    scanf("%f %f\n %f %f", &X1, &Y1, &X2, &Y2);
+    valor = ((X2 -X1) * (X2 -X1)) + ((Y2 -Y1) * (Y2 -Y1));
+    valor = sqrt(valor);
+    printf("%.4lf\n", valor);
+    return 0;
+}
