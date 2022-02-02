@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, valor;
+    int ar[7] = {100, 50, 20, 10, 5, 2, 1};
+    int br[7];
+    scanf("%d", &valor);
+    printf("%d\n", valor);
+    for(i = 0;i < 7; i++) {
+            br[i] = valor / ar[i];
+            valor = valor % ar[i];
+    }
+    for(j = 0;j < 7; j++) {
+            printf("%d nota(s) de R$ %d,00\n", br[j], ar[j]);
+    }
+   // printf("%d nota(s) de R$ 100,00\n%d nota(s) de R$ 50,00\n%d nota(s) de R$ 20,00\n%d nota(s) de R$ 10,00\n%d nota(s) de R$ 5,00\n%d nota(s) de R$ 2,00\n%d nota(s) de R$ 1,00\n", br[0], br[1], br[2], br[3], br[4], br[5], br[6]);
+    return 0;
+}
