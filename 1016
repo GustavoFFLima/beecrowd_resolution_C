@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int distance, valor;
+    scanf("%d", &distance);
+    valor = distance * 2;
+    printf("%d minutos\n", valor);
+    return 0;
+}
