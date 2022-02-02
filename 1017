@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int spentTime, speedDuring;
+    double valor;
+    scanf("%d %d", &spentTime, &speedDuring);
+    valor = (spentTime * speedDuring) / 12.0;
+    printf("%.3lf\n", valor);
+    return 0;
+}
