@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int h, m, s, valor;
+    scanf("%d", &valor);
+    h =  valor / 3600;
+    valor = valor % 3600;
+    m =  valor / 60;
+    valor = valor % 60;
+    s = valor;
+    printf("%d:%d:%d\n", h, m, s);
+    return 0;
+}
