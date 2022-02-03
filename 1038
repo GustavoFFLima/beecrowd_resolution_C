@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int X, Y;
+    float menu[5] = {4.00,4.50,5.00,2.00,1.50};
+    float valor;
+    scanf("%d %d", &X, &Y);
+    valor = menu[X-1] * Y;
+    printf("Total: R$ %.2f\n", valor);
+    return 0;
+}
